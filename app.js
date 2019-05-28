@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var axios = require('axios');
+
 var app = express();
 
 var data = {
@@ -42,13 +43,20 @@ var data = {
   }
 }
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
 app.get('/user', function(req, res) {
+  // log out headers for debugging
+  console.log(req.headers)
+
+  // pull path params from header
+  var pathParams = JSON.parse(req.get('path-params'))
+
+  // the eci is in the path params
+  var eci = pathParams.eci
+
+  // if we can match the eci return the data
   if (eci in data) {
-    res.send(data[eci]);
+    console.log(JSON.stringify(data[eci]))
+    res.send(JSON.stringify(data[eci]));
   } else {
     res.send(404);
   }
