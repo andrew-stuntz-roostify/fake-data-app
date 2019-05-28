@@ -47,13 +47,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/user', function(req, res) {
-      if (eci in data) {
-        res.send(data[eci]);
-      } else {
-        res.send(404);
-      }
-    })
-  });
+  if (eci in data) {
+    res.send(data[eci]);
+  } else {
+    res.send(404);
+  }
 });
 
 // error handler
