@@ -21,7 +21,7 @@ var data = {
     state_code: 'NY',
     postal_area_code: '10019',
     ssn: '512-44-0151',
-    dob: '04/01/1994',
+    dob: '1994-04-01',
     transaction_id: 1,
     unique_transaction_id: 1,
     response_timestamp: 1537823477
@@ -40,7 +40,7 @@ var data = {
     state_code: 'NY',
     postal_area_code: '10019',
     ssn: '368-68-8987',
-    dob: '01/27/1983',
+    dob: '1983-01-27',
     transaction_id: 1,
     unique_transaction_id: 1,
     response_timestamp: 1537823477
