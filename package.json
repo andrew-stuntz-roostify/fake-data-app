@@ -6,16 +6,22 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@panva/jose": "^1.4.0",
     "axios": "^0.18.0",
+    "bluebird": "^3.5.5",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
+    "jose-jwe": "^0.1.7",
     "jsonwebtoken": "^8.4.0",
     "jwt-decode": "^2.2.0",
     "morgan": "~1.9.0",
+    "n": "^4.1.0",
+    "node-jose": "^1.1.3",
     "node-rsa": "^1.0.3",
+    "npm": "^6.10.1",
     "openssl-wrapper": "^0.3.4",
     "x509": "^0.3.4"
   }
